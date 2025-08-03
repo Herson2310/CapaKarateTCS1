@@ -1,0 +1,917 @@
+17:20:57.261 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @loginUser
+17:20:57.397 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': cert
+17:20:58.428 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:20:58.444 [main] DEBUG com.intuit.karate.Suite - waiting for 6 features to complete
+17:20:59.954 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: cert 
+17:20:59.954 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: cert 
+17:20:59.954 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: cert 
+17:20:59.954 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: cert 
+17:20:59.954 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: cert 
+17:21:00.602 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://dummyjson.com/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 63
+1 > Host: dummyjson.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"username":"emilys","password":"emilyspass","expiresInMins":1}
+
+17:21:00.602 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://dummyjson.com/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 63
+1 > Host: dummyjson.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"username":"emilys","password":"emilyspass","expiresInMins":1}
+
+17:21:00.602 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://dummyjson.com/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 63
+1 > Host: dummyjson.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"username":"emilys","password":"emilyspass","expiresInMins":1}
+
+17:21:00.602 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://dummyjson.com/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 63
+1 > Host: dummyjson.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"username":"emilys","password":"emilyspass","expiresInMins":1}
+
+17:21:00.602 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://dummyjson.com/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 63
+1 > Host: dummyjson.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"username":"emilys","password":"emilyspass","expiresInMins":1}
+
+17:21:01.281 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 672
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Length: 930
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 Aug 2025 22:21:01 GMT
+1 < Etag: W/"3a2-J2RDjLH+VDTe+Tulz8ULapXqjb0"
+1 < Server: railway-edge
+1 < Set-Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y; Max-Age=60; Path=/; Expires=Sun, 03 Aug 2025 22:22:01 GMT; HttpOnly; Secure
+1 < Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0; Max-Age=60; Path=/; Expires=Sun, 03 Aug 2025 22:22:01 GMT; HttpOnly; Secure
+1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Cats on Keyboards
+1 < X-Railway-Edge: railway/us-east4-eqdc4a
+1 < X-Railway-Request-Id: Va369q9TQEunMXI9Cx5-qw
+1 < X-Ratelimit-Limit: 100
+1 < X-Ratelimit-Remaining: 99
+1 < X-Ratelimit-Reset: 1754259670
+1 < X-Xss-Protection: 1; mode=block
+{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0","id":1,"username":"emilys","email":"emily.johnson@x.dummyjson.com","firstName":"Emily","lastName":"Johnson","gender":"female","image":"https://dummyjson.com/icon/emilys/128"}
+
+17:21:01.281 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 673
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Length: 930
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 Aug 2025 22:21:01 GMT
+1 < Etag: W/"3a2-J2RDjLH+VDTe+Tulz8ULapXqjb0"
+1 < Server: railway-edge
+1 < Set-Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y; Max-Age=60; Path=/; Expires=Sun, 03 Aug 2025 22:22:01 GMT; HttpOnly; Secure
+1 < Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0; Max-Age=60; Path=/; Expires=Sun, 03 Aug 2025 22:22:01 GMT; HttpOnly; Secure
+1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Cats on Keyboards
+1 < X-Railway-Edge: railway/us-east4-eqdc4a
+1 < X-Railway-Request-Id: u2ymtLfqTQy3Hr0mAax-fw
+1 < X-Ratelimit-Limit: 100
+1 < X-Ratelimit-Remaining: 99
+1 < X-Ratelimit-Reset: 1754259668
+1 < X-Xss-Protection: 1; mode=block
+{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0","id":1,"username":"emilys","email":"emily.johnson@x.dummyjson.com","firstName":"Emily","lastName":"Johnson","gender":"female","image":"https://dummyjson.com/icon/emilys/128"}
+
+17:21:01.281 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 673
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Length: 930
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 Aug 2025 22:21:01 GMT
+1 < Etag: W/"3a2-J2RDjLH+VDTe+Tulz8ULapXqjb0"
+1 < Server: railway-edge
+1 < Set-Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y; Max-Age=60; Path=/; Expires=Sun, 03 Aug 2025 22:22:01 GMT; HttpOnly; Secure
+1 < Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0; Max-Age=60; Path=/; Expires=Sun, 03 Aug 2025 22:22:01 GMT; HttpOnly; Secure
+1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Cats on Keyboards
+1 < X-Railway-Edge: railway/us-east4-eqdc4a
+1 < X-Railway-Request-Id: iRERFRxOSX6IEjKTAax-fw
+1 < X-Ratelimit-Limit: 100
+1 < X-Ratelimit-Remaining: 99
+1 < X-Ratelimit-Reset: 1754259668
+1 < X-Xss-Protection: 1; mode=block
+{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0","id":1,"username":"emilys","email":"emily.johnson@x.dummyjson.com","firstName":"Emily","lastName":"Johnson","gender":"female","image":"https://dummyjson.com/icon/emilys/128"}
+
+17:21:01.281 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 672
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Length: 930
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 Aug 2025 22:21:01 GMT
+1 < Etag: W/"3a2-J2RDjLH+VDTe+Tulz8ULapXqjb0"
+1 < Server: railway-edge
+1 < Set-Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y; Max-Age=60; Path=/; Expires=Sun, 03 Aug 2025 22:22:01 GMT; HttpOnly; Secure
+1 < Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0; Max-Age=60; Path=/; Expires=Sun, 03 Aug 2025 22:22:01 GMT; HttpOnly; Secure
+1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Cats on Keyboards
+1 < X-Railway-Edge: railway/us-east4-eqdc4a
+1 < X-Railway-Request-Id: xMcZ2ObPRZaTsWnNAax-fw
+1 < X-Ratelimit-Limit: 100
+1 < X-Ratelimit-Remaining: 98
+1 < X-Ratelimit-Reset: 1754259670
+1 < X-Xss-Protection: 1; mode=block
+{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0","id":1,"username":"emilys","email":"emily.johnson@x.dummyjson.com","firstName":"Emily","lastName":"Johnson","gender":"female","image":"https://dummyjson.com/icon/emilys/128"}
+
+17:21:01.281 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 672
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Length: 930
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 Aug 2025 22:21:01 GMT
+1 < Etag: W/"3a2-J2RDjLH+VDTe+Tulz8ULapXqjb0"
+1 < Server: railway-edge
+1 < Set-Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y; Max-Age=60; Path=/; Expires=Sun, 03 Aug 2025 22:22:01 GMT; HttpOnly; Secure
+1 < Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0; Max-Age=60; Path=/; Expires=Sun, 03 Aug 2025 22:22:01 GMT; HttpOnly; Secure
+1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Cats on Keyboards
+1 < X-Railway-Edge: railway/us-east4-eqdc4a
+1 < X-Railway-Request-Id: dfK4vi9FTQWwGBtZg4a9AQ
+1 < X-Ratelimit-Limit: 100
+1 < X-Ratelimit-Remaining: 99
+1 < X-Ratelimit-Reset: 1754259664
+1 < X-Xss-Protection: 1; mode=block
+{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0","id":1,"username":"emilys","email":"emily.johnson@x.dummyjson.com","firstName":"Emily","lastName":"Johnson","gender":"female","image":"https://dummyjson.com/icon/emilys/128"}
+
+17:21:01.291 [pool-2-thread-4] INFO  com.intuit.karate - [print] Token:  {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0",
+  "id": 1,
+  "username": "emilys",
+  "email": "emily.johnson@x.dummyjson.com",
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "gender": "female",
+  "image": "https://dummyjson.com/icon/emilys/128"
+}
+ 
+17:21:01.291 [pool-2-thread-3] INFO  com.intuit.karate - [print] Token:  {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0",
+  "id": 1,
+  "username": "emilys",
+  "email": "emily.johnson@x.dummyjson.com",
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "gender": "female",
+  "image": "https://dummyjson.com/icon/emilys/128"
+}
+ 
+17:21:01.291 [pool-2-thread-5] INFO  com.intuit.karate - [print] Token:  {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0",
+  "id": 1,
+  "username": "emilys",
+  "email": "emily.johnson@x.dummyjson.com",
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "gender": "female",
+  "image": "https://dummyjson.com/icon/emilys/128"
+}
+ 
+17:21:01.291 [pool-2-thread-2] INFO  com.intuit.karate - [print] Token:  {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0",
+  "id": 1,
+  "username": "emilys",
+  "email": "emily.johnson@x.dummyjson.com",
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "gender": "female",
+  "image": "https://dummyjson.com/icon/emilys/128"
+}
+ 
+17:21:01.291 [pool-2-thread-1] INFO  com.intuit.karate - [print] Token:  {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0",
+  "id": 1,
+  "username": "emilys",
+  "email": "emily.johnson@x.dummyjson.com",
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "gender": "female",
+  "image": "https://dummyjson.com/icon/emilys/128"
+}
+ 
+17:21:01.296 [pool-2-thread-3] INFO  com.intuit.karate - [print] access_token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y 
+17:21:01.296 [pool-2-thread-2] INFO  com.intuit.karate - [print] access_token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y 
+17:21:01.296 [pool-2-thread-5] INFO  com.intuit.karate - [print] access_token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y 
+17:21:01.296 [pool-2-thread-1] INFO  com.intuit.karate - [print] access_token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y 
+17:21:01.296 [pool-2-thread-4] INFO  com.intuit.karate - [print] access_token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y 
+17:21:01.308 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://dummyjson.com/auth/me
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y
+1 > Host: dummyjson.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:21:01.308 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://dummyjson.com/auth/me
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y
+1 > Host: dummyjson.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:21:01.308 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://dummyjson.com/auth/me
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y
+1 > Host: dummyjson.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:21:01.308 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://dummyjson.com/auth/me
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y
+1 > Host: dummyjson.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:21:01.308 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://dummyjson.com/auth/me
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y
+1 > Host: dummyjson.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:21:01.610 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 298
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 Aug 2025 22:21:01 GMT
+1 < Etag: W/"57b-eBF3JfwanM/U4Wy609CPdIf9zRA"
+1 < Server: railway-edge
+1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Cats on Keyboards
+1 < X-Railway-Edge: railway/us-east4-eqdc4a
+1 < X-Railway-Request-Id: b9hoHEhnS561VJrbg4a9AQ
+1 < X-Ratelimit-Limit: 100
+1 < X-Ratelimit-Remaining: 98
+1 < X-Ratelimit-Reset: 1754259664
+1 < X-Xss-Protection: 1; mode=block
+1 < Transfer-Encoding: chunked
+{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":28,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emilyspass","birthDate":"1996-5-30","image":"https://dummyjson.com/icon/emilys/128","bloodGroup":"O-","height":193.24,"weight":63.16,"eyeColor":"Green","hair":{"color":"Brown","type":"Curly"},"ip":"42.48.100.32","address":{"address":"626 Main Street","city":"Phoenix","state":"Mississippi","stateCode":"MS","postalCode":"29112","coordinates":{"lat":-77.16213,"lng":-92.084824},"country":"United States"},"macAddress":"47:fa:41:18:ec:eb","university":"University of Wisconsin--Madison","bank":{"cardExpire":"03/26","cardNumber":"9289760655481815","cardType":"Elo","currency":"CNY","iban":"YPUXISOBI7TTHPK2BR3HAIXL"},"company":{"department":"Engineering","name":"Dooley, Kozey and Cronin","title":"Sales Manager","address":{"address":"263 Tenth Street","city":"San Francisco","state":"Wisconsin","stateCode":"WI","postalCode":"37657","coordinates":{"lat":71.814525,"lng":-161.150263},"country":"United States"}},"ein":"977-175","ssn":"900-590-289","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36","crypto":{"coin":"Bitcoin","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a","network":"Ethereum (ERC20)"},"role":"admin"}
+
+17:21:01.610 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 298
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 Aug 2025 22:21:01 GMT
+1 < Etag: W/"57b-eBF3JfwanM/U4Wy609CPdIf9zRA"
+1 < Server: railway-edge
+1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Cats on Keyboards
+1 < X-Railway-Edge: railway/us-east4-eqdc4a
+1 < X-Railway-Request-Id: nTSKh3-6Tw2v6GQmAax-fw
+1 < X-Ratelimit-Limit: 100
+1 < X-Ratelimit-Remaining: 98
+1 < X-Ratelimit-Reset: 1754259668
+1 < X-Xss-Protection: 1; mode=block
+1 < Transfer-Encoding: chunked
+{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":28,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emilyspass","birthDate":"1996-5-30","image":"https://dummyjson.com/icon/emilys/128","bloodGroup":"O-","height":193.24,"weight":63.16,"eyeColor":"Green","hair":{"color":"Brown","type":"Curly"},"ip":"42.48.100.32","address":{"address":"626 Main Street","city":"Phoenix","state":"Mississippi","stateCode":"MS","postalCode":"29112","coordinates":{"lat":-77.16213,"lng":-92.084824},"country":"United States"},"macAddress":"47:fa:41:18:ec:eb","university":"University of Wisconsin--Madison","bank":{"cardExpire":"03/26","cardNumber":"9289760655481815","cardType":"Elo","currency":"CNY","iban":"YPUXISOBI7TTHPK2BR3HAIXL"},"company":{"department":"Engineering","name":"Dooley, Kozey and Cronin","title":"Sales Manager","address":{"address":"263 Tenth Street","city":"San Francisco","state":"Wisconsin","stateCode":"WI","postalCode":"37657","coordinates":{"lat":71.814525,"lng":-161.150263},"country":"United States"}},"ein":"977-175","ssn":"900-590-289","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36","crypto":{"coin":"Bitcoin","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a","network":"Ethereum (ERC20)"},"role":"admin"}
+
+17:21:01.610 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 298
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 Aug 2025 22:21:01 GMT
+1 < Etag: W/"57b-eBF3JfwanM/U4Wy609CPdIf9zRA"
+1 < Server: railway-edge
+1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Cats on Keyboards
+1 < X-Railway-Edge: railway/us-east4-eqdc4a
+1 < X-Railway-Request-Id: Gr592drHSgeJhxMOCx5-qw
+1 < X-Ratelimit-Limit: 100
+1 < X-Ratelimit-Remaining: 97
+1 < X-Ratelimit-Reset: 1754259670
+1 < X-Xss-Protection: 1; mode=block
+1 < Transfer-Encoding: chunked
+{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":28,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emilyspass","birthDate":"1996-5-30","image":"https://dummyjson.com/icon/emilys/128","bloodGroup":"O-","height":193.24,"weight":63.16,"eyeColor":"Green","hair":{"color":"Brown","type":"Curly"},"ip":"42.48.100.32","address":{"address":"626 Main Street","city":"Phoenix","state":"Mississippi","stateCode":"MS","postalCode":"29112","coordinates":{"lat":-77.16213,"lng":-92.084824},"country":"United States"},"macAddress":"47:fa:41:18:ec:eb","university":"University of Wisconsin--Madison","bank":{"cardExpire":"03/26","cardNumber":"9289760655481815","cardType":"Elo","currency":"CNY","iban":"YPUXISOBI7TTHPK2BR3HAIXL"},"company":{"department":"Engineering","name":"Dooley, Kozey and Cronin","title":"Sales Manager","address":{"address":"263 Tenth Street","city":"San Francisco","state":"Wisconsin","stateCode":"WI","postalCode":"37657","coordinates":{"lat":71.814525,"lng":-161.150263},"country":"United States"}},"ein":"977-175","ssn":"900-590-289","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36","crypto":{"coin":"Bitcoin","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a","network":"Ethereum (ERC20)"},"role":"admin"}
+
+17:21:01.614 [pool-2-thread-2] INFO  com.intuit.karate - [print] Respuesta:  {
+  "id": 1,
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "maidenName": "Smith",
+  "age": 28,
+  "gender": "female",
+  "email": "emily.johnson@x.dummyjson.com",
+  "phone": "+81 965-431-3024",
+  "username": "emilys",
+  "password": "emilyspass",
+  "birthDate": "1996-5-30",
+  "image": "https://dummyjson.com/icon/emilys/128",
+  "bloodGroup": "O-",
+  "height": 193.24,
+  "weight": 63.16,
+  "eyeColor": "Green",
+  "hair": {
+    "color": "Brown",
+    "type": "Curly"
+  },
+  "ip": "42.48.100.32",
+  "address": {
+    "address": "626 Main Street",
+    "city": "Phoenix",
+    "state": "Mississippi",
+    "stateCode": "MS",
+    "postalCode": "29112",
+    "coordinates": {
+      "lat": -77.16213,
+      "lng": -92.084824
+    },
+    "country": "United States"
+  },
+  "macAddress": "47:fa:41:18:ec:eb",
+  "university": "University of Wisconsin--Madison",
+  "bank": {
+    "cardExpire": "03/26",
+    "cardNumber": "9289760655481815",
+    "cardType": "Elo",
+    "currency": "CNY",
+    "iban": "YPUXISOBI7TTHPK2BR3HAIXL"
+  },
+  "company": {
+    "department": "Engineering",
+    "name": "Dooley, Kozey and Cronin",
+    "title": "Sales Manager",
+    "address": {
+      "address": "263 Tenth Street",
+      "city": "San Francisco",
+      "state": "Wisconsin",
+      "stateCode": "WI",
+      "postalCode": "37657",
+      "coordinates": {
+        "lat": 71.814525,
+        "lng": -161.150263
+      },
+      "country": "United States"
+    }
+  },
+  "ein": "977-175",
+  "ssn": "900-590-289",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
+  "crypto": {
+    "coin": "Bitcoin",
+    "wallet": "0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a",
+    "network": "Ethereum (ERC20)"
+  },
+  "role": "admin"
+}
+ 
+17:21:01.614 [pool-2-thread-1] INFO  com.intuit.karate - [print] Respuesta:  {
+  "id": 1,
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "maidenName": "Smith",
+  "age": 28,
+  "gender": "female",
+  "email": "emily.johnson@x.dummyjson.com",
+  "phone": "+81 965-431-3024",
+  "username": "emilys",
+  "password": "emilyspass",
+  "birthDate": "1996-5-30",
+  "image": "https://dummyjson.com/icon/emilys/128",
+  "bloodGroup": "O-",
+  "height": 193.24,
+  "weight": 63.16,
+  "eyeColor": "Green",
+  "hair": {
+    "color": "Brown",
+    "type": "Curly"
+  },
+  "ip": "42.48.100.32",
+  "address": {
+    "address": "626 Main Street",
+    "city": "Phoenix",
+    "state": "Mississippi",
+    "stateCode": "MS",
+    "postalCode": "29112",
+    "coordinates": {
+      "lat": -77.16213,
+      "lng": -92.084824
+    },
+    "country": "United States"
+  },
+  "macAddress": "47:fa:41:18:ec:eb",
+  "university": "University of Wisconsin--Madison",
+  "bank": {
+    "cardExpire": "03/26",
+    "cardNumber": "9289760655481815",
+    "cardType": "Elo",
+    "currency": "CNY",
+    "iban": "YPUXISOBI7TTHPK2BR3HAIXL"
+  },
+  "company": {
+    "department": "Engineering",
+    "name": "Dooley, Kozey and Cronin",
+    "title": "Sales Manager",
+    "address": {
+      "address": "263 Tenth Street",
+      "city": "San Francisco",
+      "state": "Wisconsin",
+      "stateCode": "WI",
+      "postalCode": "37657",
+      "coordinates": {
+        "lat": 71.814525,
+        "lng": -161.150263
+      },
+      "country": "United States"
+    }
+  },
+  "ein": "977-175",
+  "ssn": "900-590-289",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
+  "crypto": {
+    "coin": "Bitcoin",
+    "wallet": "0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a",
+    "network": "Ethereum (ERC20)"
+  },
+  "role": "admin"
+}
+ 
+17:21:01.614 [pool-2-thread-3] INFO  com.intuit.karate - [print] Respuesta:  {
+  "id": 1,
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "maidenName": "Smith",
+  "age": 28,
+  "gender": "female",
+  "email": "emily.johnson@x.dummyjson.com",
+  "phone": "+81 965-431-3024",
+  "username": "emilys",
+  "password": "emilyspass",
+  "birthDate": "1996-5-30",
+  "image": "https://dummyjson.com/icon/emilys/128",
+  "bloodGroup": "O-",
+  "height": 193.24,
+  "weight": 63.16,
+  "eyeColor": "Green",
+  "hair": {
+    "color": "Brown",
+    "type": "Curly"
+  },
+  "ip": "42.48.100.32",
+  "address": {
+    "address": "626 Main Street",
+    "city": "Phoenix",
+    "state": "Mississippi",
+    "stateCode": "MS",
+    "postalCode": "29112",
+    "coordinates": {
+      "lat": -77.16213,
+      "lng": -92.084824
+    },
+    "country": "United States"
+  },
+  "macAddress": "47:fa:41:18:ec:eb",
+  "university": "University of Wisconsin--Madison",
+  "bank": {
+    "cardExpire": "03/26",
+    "cardNumber": "9289760655481815",
+    "cardType": "Elo",
+    "currency": "CNY",
+    "iban": "YPUXISOBI7TTHPK2BR3HAIXL"
+  },
+  "company": {
+    "department": "Engineering",
+    "name": "Dooley, Kozey and Cronin",
+    "title": "Sales Manager",
+    "address": {
+      "address": "263 Tenth Street",
+      "city": "San Francisco",
+      "state": "Wisconsin",
+      "stateCode": "WI",
+      "postalCode": "37657",
+      "coordinates": {
+        "lat": 71.814525,
+        "lng": -161.150263
+      },
+      "country": "United States"
+    }
+  },
+  "ein": "977-175",
+  "ssn": "900-590-289",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
+  "crypto": {
+    "coin": "Bitcoin",
+    "wallet": "0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a",
+    "network": "Ethereum (ERC20)"
+  },
+  "role": "admin"
+}
+ 
+17:21:01.619 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 311
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 Aug 2025 22:21:01 GMT
+1 < Etag: W/"57b-eBF3JfwanM/U4Wy609CPdIf9zRA"
+1 < Server: railway-edge
+1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Cats on Keyboards
+1 < X-Railway-Edge: railway/us-east4-eqdc4a
+1 < X-Railway-Request-Id: Qqe5sBv-QzKzaASgg4a9AQ
+1 < X-Ratelimit-Limit: 100
+1 < X-Ratelimit-Remaining: 97
+1 < X-Ratelimit-Reset: 1754259664
+1 < X-Xss-Protection: 1; mode=block
+1 < Transfer-Encoding: chunked
+{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":28,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emilyspass","birthDate":"1996-5-30","image":"https://dummyjson.com/icon/emilys/128","bloodGroup":"O-","height":193.24,"weight":63.16,"eyeColor":"Green","hair":{"color":"Brown","type":"Curly"},"ip":"42.48.100.32","address":{"address":"626 Main Street","city":"Phoenix","state":"Mississippi","stateCode":"MS","postalCode":"29112","coordinates":{"lat":-77.16213,"lng":-92.084824},"country":"United States"},"macAddress":"47:fa:41:18:ec:eb","university":"University of Wisconsin--Madison","bank":{"cardExpire":"03/26","cardNumber":"9289760655481815","cardType":"Elo","currency":"CNY","iban":"YPUXISOBI7TTHPK2BR3HAIXL"},"company":{"department":"Engineering","name":"Dooley, Kozey and Cronin","title":"Sales Manager","address":{"address":"263 Tenth Street","city":"San Francisco","state":"Wisconsin","stateCode":"WI","postalCode":"37657","coordinates":{"lat":71.814525,"lng":-161.150263},"country":"United States"}},"ein":"977-175","ssn":"900-590-289","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36","crypto":{"coin":"Bitcoin","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a","network":"Ethereum (ERC20)"},"role":"admin"}
+
+17:21:01.619 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 309
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 Aug 2025 22:21:01 GMT
+1 < Etag: W/"57b-eBF3JfwanM/U4Wy609CPdIf9zRA"
+1 < Server: railway-edge
+1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Cats on Keyboards
+1 < X-Railway-Edge: railway/us-east4-eqdc4a
+1 < X-Railway-Request-Id: jAS7bZlWQ2Coj5dXg4a9AQ
+1 < X-Ratelimit-Limit: 100
+1 < X-Ratelimit-Remaining: 99
+1 < X-Ratelimit-Reset: 1754259667
+1 < X-Xss-Protection: 1; mode=block
+1 < Transfer-Encoding: chunked
+{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":28,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emilyspass","birthDate":"1996-5-30","image":"https://dummyjson.com/icon/emilys/128","bloodGroup":"O-","height":193.24,"weight":63.16,"eyeColor":"Green","hair":{"color":"Brown","type":"Curly"},"ip":"42.48.100.32","address":{"address":"626 Main Street","city":"Phoenix","state":"Mississippi","stateCode":"MS","postalCode":"29112","coordinates":{"lat":-77.16213,"lng":-92.084824},"country":"United States"},"macAddress":"47:fa:41:18:ec:eb","university":"University of Wisconsin--Madison","bank":{"cardExpire":"03/26","cardNumber":"9289760655481815","cardType":"Elo","currency":"CNY","iban":"YPUXISOBI7TTHPK2BR3HAIXL"},"company":{"department":"Engineering","name":"Dooley, Kozey and Cronin","title":"Sales Manager","address":{"address":"263 Tenth Street","city":"San Francisco","state":"Wisconsin","stateCode":"WI","postalCode":"37657","coordinates":{"lat":71.814525,"lng":-161.150263},"country":"United States"}},"ein":"977-175","ssn":"900-590-289","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36","crypto":{"coin":"Bitcoin","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a","network":"Ethereum (ERC20)"},"role":"admin"}
+
+17:21:01.624 [pool-2-thread-5] INFO  com.intuit.karate - [print] Respuesta:  {
+  "id": 1,
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "maidenName": "Smith",
+  "age": 28,
+  "gender": "female",
+  "email": "emily.johnson@x.dummyjson.com",
+  "phone": "+81 965-431-3024",
+  "username": "emilys",
+  "password": "emilyspass",
+  "birthDate": "1996-5-30",
+  "image": "https://dummyjson.com/icon/emilys/128",
+  "bloodGroup": "O-",
+  "height": 193.24,
+  "weight": 63.16,
+  "eyeColor": "Green",
+  "hair": {
+    "color": "Brown",
+    "type": "Curly"
+  },
+  "ip": "42.48.100.32",
+  "address": {
+    "address": "626 Main Street",
+    "city": "Phoenix",
+    "state": "Mississippi",
+    "stateCode": "MS",
+    "postalCode": "29112",
+    "coordinates": {
+      "lat": -77.16213,
+      "lng": -92.084824
+    },
+    "country": "United States"
+  },
+  "macAddress": "47:fa:41:18:ec:eb",
+  "university": "University of Wisconsin--Madison",
+  "bank": {
+    "cardExpire": "03/26",
+    "cardNumber": "9289760655481815",
+    "cardType": "Elo",
+    "currency": "CNY",
+    "iban": "YPUXISOBI7TTHPK2BR3HAIXL"
+  },
+  "company": {
+    "department": "Engineering",
+    "name": "Dooley, Kozey and Cronin",
+    "title": "Sales Manager",
+    "address": {
+      "address": "263 Tenth Street",
+      "city": "San Francisco",
+      "state": "Wisconsin",
+      "stateCode": "WI",
+      "postalCode": "37657",
+      "coordinates": {
+        "lat": 71.814525,
+        "lng": -161.150263
+      },
+      "country": "United States"
+    }
+  },
+  "ein": "977-175",
+  "ssn": "900-590-289",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
+  "crypto": {
+    "coin": "Bitcoin",
+    "wallet": "0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a",
+    "network": "Ethereum (ERC20)"
+  },
+  "role": "admin"
+}
+ 
+17:21:01.624 [pool-2-thread-4] INFO  com.intuit.karate - [print] Respuesta:  {
+  "id": 1,
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "maidenName": "Smith",
+  "age": 28,
+  "gender": "female",
+  "email": "emily.johnson@x.dummyjson.com",
+  "phone": "+81 965-431-3024",
+  "username": "emilys",
+  "password": "emilyspass",
+  "birthDate": "1996-5-30",
+  "image": "https://dummyjson.com/icon/emilys/128",
+  "bloodGroup": "O-",
+  "height": 193.24,
+  "weight": 63.16,
+  "eyeColor": "Green",
+  "hair": {
+    "color": "Brown",
+    "type": "Curly"
+  },
+  "ip": "42.48.100.32",
+  "address": {
+    "address": "626 Main Street",
+    "city": "Phoenix",
+    "state": "Mississippi",
+    "stateCode": "MS",
+    "postalCode": "29112",
+    "coordinates": {
+      "lat": -77.16213,
+      "lng": -92.084824
+    },
+    "country": "United States"
+  },
+  "macAddress": "47:fa:41:18:ec:eb",
+  "university": "University of Wisconsin--Madison",
+  "bank": {
+    "cardExpire": "03/26",
+    "cardNumber": "9289760655481815",
+    "cardType": "Elo",
+    "currency": "CNY",
+    "iban": "YPUXISOBI7TTHPK2BR3HAIXL"
+  },
+  "company": {
+    "department": "Engineering",
+    "name": "Dooley, Kozey and Cronin",
+    "title": "Sales Manager",
+    "address": {
+      "address": "263 Tenth Street",
+      "city": "San Francisco",
+      "state": "Wisconsin",
+      "stateCode": "WI",
+      "postalCode": "37657",
+      "coordinates": {
+        "lat": 71.814525,
+        "lng": -161.150263
+      },
+      "country": "United States"
+    }
+  },
+  "ein": "977-175",
+  "ssn": "900-590-289",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
+  "crypto": {
+    "coin": "Bitcoin",
+    "wallet": "0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a",
+    "network": "Ethereum (ERC20)"
+  },
+  "role": "admin"
+}
+ 
+17:21:01.624 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: cert 
+17:21:01.658 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://dummyjson.com/auth/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 63
+1 > Host: dummyjson.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"username":"emilys","password":"emilyspass","expiresInMins":1}
+
+17:21:01.967 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 306
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Length: 930
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 Aug 2025 22:21:01 GMT
+1 < Etag: W/"3a2-J2RDjLH+VDTe+Tulz8ULapXqjb0"
+1 < Server: railway-edge
+1 < Set-Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y; Max-Age=60; Path=/; Expires=Sun, 03 Aug 2025 22:22:01 GMT; HttpOnly; Secure
+1 < Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0; Max-Age=60; Path=/; Expires=Sun, 03 Aug 2025 22:22:01 GMT; HttpOnly; Secure
+1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Cats on Keyboards
+1 < X-Railway-Edge: railway/us-east4-eqdc4a
+1 < X-Railway-Request-Id: DzUL-QI0Rx6IkvafCx5-qw
+1 < X-Ratelimit-Limit: 100
+1 < X-Ratelimit-Remaining: 96
+1 < X-Ratelimit-Reset: 1754259670
+1 < X-Xss-Protection: 1; mode=block
+{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0","id":1,"username":"emilys","email":"emily.johnson@x.dummyjson.com","firstName":"Emily","lastName":"Johnson","gender":"female","image":"https://dummyjson.com/icon/emilys/128"}
+
+17:21:01.967 [pool-2-thread-2] INFO  com.intuit.karate - [print] Token:  {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1Njg1MTY2MX0.ZlwJW2HSSSeSGQaQ-EL5HC-wk73SlZC0-Mu7GG_mqA0",
+  "id": 1,
+  "username": "emilys",
+  "email": "emily.johnson@x.dummyjson.com",
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "gender": "female",
+  "image": "https://dummyjson.com/icon/emilys/128"
+}
+ 
+17:21:01.973 [pool-2-thread-2] INFO  com.intuit.karate - [print] access_token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y 
+17:21:01.973 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://dummyjson.com/auth/me
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NTQyNTk2NjEsImV4cCI6MTc1NDI1OTcyMX0.4mjt2qAPkTbt4fH6Soq1LOpTyzAzvk8cUCh5-nqAb2Y
+1 > Host: dummyjson.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:21:02.281 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 299
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 Aug 2025 22:21:02 GMT
+1 < Etag: W/"57b-eBF3JfwanM/U4Wy609CPdIf9zRA"
+1 < Server: railway-edge
+1 < Strict-Transport-Security: max-age=15552000; includeSubDomains
+1 < Vary: Accept-Encoding
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Cats on Keyboards
+1 < X-Railway-Edge: railway/us-east4-eqdc4a
+1 < X-Railway-Request-Id: ne2gIkAoS56_c-y2Aax-fw
+1 < X-Ratelimit-Limit: 100
+1 < X-Ratelimit-Remaining: 97
+1 < X-Ratelimit-Reset: 1754259668
+1 < X-Xss-Protection: 1; mode=block
+1 < Transfer-Encoding: chunked
+{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":28,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emilyspass","birthDate":"1996-5-30","image":"https://dummyjson.com/icon/emilys/128","bloodGroup":"O-","height":193.24,"weight":63.16,"eyeColor":"Green","hair":{"color":"Brown","type":"Curly"},"ip":"42.48.100.32","address":{"address":"626 Main Street","city":"Phoenix","state":"Mississippi","stateCode":"MS","postalCode":"29112","coordinates":{"lat":-77.16213,"lng":-92.084824},"country":"United States"},"macAddress":"47:fa:41:18:ec:eb","university":"University of Wisconsin--Madison","bank":{"cardExpire":"03/26","cardNumber":"9289760655481815","cardType":"Elo","currency":"CNY","iban":"YPUXISOBI7TTHPK2BR3HAIXL"},"company":{"department":"Engineering","name":"Dooley, Kozey and Cronin","title":"Sales Manager","address":{"address":"263 Tenth Street","city":"San Francisco","state":"Wisconsin","stateCode":"WI","postalCode":"37657","coordinates":{"lat":71.814525,"lng":-161.150263},"country":"United States"}},"ein":"977-175","ssn":"900-590-289","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36","crypto":{"coin":"Bitcoin","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a","network":"Ethereum (ERC20)"},"role":"admin"}
+
+17:21:02.283 [pool-2-thread-2] INFO  com.intuit.karate - [print] Respuesta:  {
+  "id": 1,
+  "firstName": "Emily",
+  "lastName": "Johnson",
+  "maidenName": "Smith",
+  "age": 28,
+  "gender": "female",
+  "email": "emily.johnson@x.dummyjson.com",
+  "phone": "+81 965-431-3024",
+  "username": "emilys",
+  "password": "emilyspass",
+  "birthDate": "1996-5-30",
+  "image": "https://dummyjson.com/icon/emilys/128",
+  "bloodGroup": "O-",
+  "height": 193.24,
+  "weight": 63.16,
+  "eyeColor": "Green",
+  "hair": {
+    "color": "Brown",
+    "type": "Curly"
+  },
+  "ip": "42.48.100.32",
+  "address": {
+    "address": "626 Main Street",
+    "city": "Phoenix",
+    "state": "Mississippi",
+    "stateCode": "MS",
+    "postalCode": "29112",
+    "coordinates": {
+      "lat": -77.16213,
+      "lng": -92.084824
+    },
+    "country": "United States"
+  },
+  "macAddress": "47:fa:41:18:ec:eb",
+  "university": "University of Wisconsin--Madison",
+  "bank": {
+    "cardExpire": "03/26",
+    "cardNumber": "9289760655481815",
+    "cardType": "Elo",
+    "currency": "CNY",
+    "iban": "YPUXISOBI7TTHPK2BR3HAIXL"
+  },
+  "company": {
+    "department": "Engineering",
+    "name": "Dooley, Kozey and Cronin",
+    "title": "Sales Manager",
+    "address": {
+      "address": "263 Tenth Street",
+      "city": "San Francisco",
+      "state": "Wisconsin",
+      "stateCode": "WI",
+      "postalCode": "37657",
+      "coordinates": {
+        "lat": 71.814525,
+        "lng": -161.150263
+      },
+      "country": "United States"
+    }
+  },
+  "ein": "977-175",
+  "ssn": "900-590-289",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36",
+  "crypto": {
+    "coin": "Bitcoin",
+    "wallet": "0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a",
+    "network": "Ethereum (ERC20)"
+  },
+  "role": "admin"
+}
+ 
+17:21:03.659 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 6 (4 remaining) classpath:features/auth/login.feature

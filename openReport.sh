@@ -1,0 +1,1 @@
+start file:///C:/Users/Admin/Downloads/Capacitacion/CapacitacionKarateTCS1205/CapaKarateTCS1/target/karate-reports/karate-summary.html
