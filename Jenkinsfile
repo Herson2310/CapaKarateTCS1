@@ -58,7 +58,8 @@ pipeline {
 
     post {
         always {
-            junit '**/target/surefire-reports/*.xml' // Publica resultados JUnit para verlos en Jenkins
+            // Publica resultados JUnit para verlos en Jenkins
+            junit '**/target/surefire-reports/*.xml'
         }
         success {
             echo 'Todas las pruebas pasaron con éxito.'
