@@ -17,18 +17,9 @@ pipeline {
             steps {
                 script {
 
-                    if(!isUnix()){
-
-                        bat 'mvn -version || echo Maven is not installed'
-
-                    }else{
-
-                        sh 'mvn -version || echo Maven is not installed'
-                    }
+                     bat 'mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags @products"'
 
                 }
-
-                    sh 'mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags @products"'
 
             }
         }
@@ -37,7 +28,7 @@ pipeline {
             steps {
                 script {
                     // Genera reporte con Karate (generalmente target/karate-reports)
-                    sh 'mvn karate:report'
+                    bat 'mvn karate:report'
                 }
             }
         }
