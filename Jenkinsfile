@@ -24,14 +24,7 @@ pipeline {
             }
         }
 
-        stage('Generate Report') {
-            steps {
-                script {
-                    // Genera reporte con Karate (generalmente target/karate-reports)
-                    bat 'mvn karate:report'
-                }
-            }
-        }
+
 
         stage('Publish Report') {
             steps {
