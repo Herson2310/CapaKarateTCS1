@@ -2,7 +2,9 @@ pipeline {
     agent any
 
     tools {
+        // Debes tener configurado Maven en Jenkins (Global Tool Configuration)
         maven 'Maven Apache'
+        // Asegúrate de usar la versión de Java que requiere tu proyecto
         jdk 'Java17'
     }
 
@@ -17,6 +19,7 @@ pipeline {
             steps {
                 script {
 
+                    // Limpia, compila y ejecuta las pruebas
                      bat 'mvn clean test -Dkarate.env=cert "-Dkarate.options=--tags @products"'
 
                 }
