@@ -9527,3 +9527,81 @@
 }
  
 15:58:33.980 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 6 (2 remaining) classpath:features/products/products.feature
+19:16:14.418 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_001
+19:16:15.786 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:16:15.796 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760228175788
+19:16:15.809 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:16:17.250 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:16:17.298 [pool-2-thread-1] ERROR com.intuit.karate - classpath:features/database/workDB.feature:4
+* def db = Java.Type('utilities:Database')
+js failed:
+>>>>
+01: Java.Type('utilities:Database')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: (intermediate value).Type is not a function
+- <js>.:program(Unnamed:1)
+
+classpath:features/database/workDB.feature:4
+19:16:17.887 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:17:09.393 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_001
+19:17:10.712 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:17:10.750 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760228230713
+19:17:10.758 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:17:12.154 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:17:12.247 [pool-2-thread-1] ERROR com.intuit.karate - classpath:features/database/workDB.feature:4
+* def db = Java.type('utilities:Database')
+js failed:
+>>>>
+01: Java.type('utilities:Database')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class utilities:Database is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:features/database/workDB.feature:4
+19:17:13.007 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:19:07.294 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_001
+19:19:08.562 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:19:08.602 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760228348565
+19:19:08.609 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:19:10.082 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:19:10.140 [pool-2-thread-1] ERROR com.intuit.karate - classpath:features/database/workDB.feature:4
+* def db = Java.type('utilities:Database')
+js failed:
+>>>>
+01: Java.type('utilities:Database')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class utilities:Database is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:features/database/workDB.feature:4
+19:19:10.892 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:19:32.694 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_001
+19:19:33.936 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:19:33.974 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760228373938
+19:19:33.983 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:19:35.400 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:19:36.166 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:23:12.772 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_001
+19:23:14.069 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:23:14.120 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760228594071
+19:23:14.129 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:23:15.564 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:23:16.757 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:28:50.158 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_001
+19:28:51.466 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:28:51.505 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760228931468
+19:28:51.514 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:28:52.919 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:28:53.996 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:30:00.765 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_001
+19:30:02.060 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:30:02.099 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760229002063
+19:30:02.108 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:30:03.538 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:30:04.540 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:39:24.948 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_001
+19:39:26.269 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:39:26.309 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760229566273
+19:39:26.316 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:39:27.733 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:39:28.736 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature

@@ -1,4 +1,5 @@
 utilities\DataGenerator.class
 features\ExamplesTest.class
 features\products\ProductsRunner.class
+utilities\Database.class
 features\users\UsersRunner.class
