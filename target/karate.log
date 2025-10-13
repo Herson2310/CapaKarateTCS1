@@ -9605,3 +9605,104 @@ classpath:features/database/workDB.feature:4
 19:39:26.316 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
 19:39:27.733 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
 19:39:28.736 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+18:50:27.173 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_001
+18:50:29.031 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:50:29.047 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760313029037
+18:50:29.063 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+18:50:31.352 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+18:50:32.757 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:10:04.013 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_002
+19:10:04.747 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:10:04.757 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760314204748
+19:10:04.765 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:10:05.635 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+19:10:05.635 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:10:06.310 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:23:57.141 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_003
+19:23:57.896 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:23:57.906 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760315037897
+19:23:57.915 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:23:58.809 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:23:59.453 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:30:13.766 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_003
+19:30:14.513 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:30:14.525 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760315414515
+19:30:14.534 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:30:15.406 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:30:15.617 [pool-2-thread-1] INFO  com.intuit.karate - [print] 56565656 
+19:30:15.619 [pool-2-thread-1] INFO  com.intuit.karate - [print] Julieta 
+19:30:15.619 [pool-2-thread-1] INFO  com.intuit.karate - [print] Lascano Ugarte 
+19:30:15.621 [pool-2-thread-1] INFO  com.intuit.karate - [print] Telefono 
+19:30:15.621 [pool-2-thread-1] INFO  com.intuit.karate - [print] 15.23 
+19:30:16.071 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:36:22.168 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_003
+19:36:22.905 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:36:22.923 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760315782905
+19:36:22.932 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:36:23.819 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:36:24.005 [pool-2-thread-1] INFO  com.intuit.karate - [print] DNI:  57575757 
+19:36:24.005 [pool-2-thread-1] INFO  com.intuit.karate - [print] Nombre:  Tito 
+19:36:24.005 [pool-2-thread-1] INFO  com.intuit.karate - [print] Apellidos:  Lara Smith 
+19:36:24.005 [pool-2-thread-1] INFO  com.intuit.karate - [print] Servicio:  Cable 
+19:36:24.005 [pool-2-thread-1] INFO  com.intuit.karate - [print] Deuda:  168.1 
+19:36:24.472 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:38:40.442 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_003
+19:38:41.192 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:38:41.203 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760315921194
+19:38:41.211 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:38:42.077 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:38:42.259 [pool-2-thread-1] INFO  com.intuit.karate - [print] DNI:  57575757 
+19:38:42.261 [pool-2-thread-1] INFO  com.intuit.karate - [print] Nombre:  Tito 
+19:38:42.262 [pool-2-thread-1] INFO  com.intuit.karate - [print] Apellidos:  Lara Smith 
+19:38:42.262 [pool-2-thread-1] INFO  com.intuit.karate - [print] Servicio:  Cable 
+19:38:42.264 [pool-2-thread-1] INFO  com.intuit.karate - [print] Deuda:  168.1 
+19:38:42.303 [pool-2-thread-1] ERROR com.intuit.karate - classpath:features/database/workDB.feature:27
+* match cliente.DNI == 'Tito'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  '57575757'
+  'Tito'
+
+classpath:features/database/workDB.feature:27
+19:38:42.715 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:38:59.597 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_003
+19:39:00.334 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:39:00.343 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760315940334
+19:39:00.348 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:39:01.207 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:39:01.396 [pool-2-thread-1] INFO  com.intuit.karate - [print] DNI:  57575757 
+19:39:01.398 [pool-2-thread-1] INFO  com.intuit.karate - [print] Nombre:  Tito 
+19:39:01.399 [pool-2-thread-1] INFO  com.intuit.karate - [print] Apellidos:  Lara Smith 
+19:39:01.400 [pool-2-thread-1] INFO  com.intuit.karate - [print] Servicio:  Cable 
+19:39:01.400 [pool-2-thread-1] INFO  com.intuit.karate - [print] Deuda:  168.1 
+19:39:01.882 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:39:18.102 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_003
+19:39:18.834 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:39:18.841 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760315958835
+19:39:18.850 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:39:19.704 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:39:19.912 [pool-2-thread-1] INFO  com.intuit.karate - [print] DNI:  57575757 
+19:39:19.913 [pool-2-thread-1] INFO  com.intuit.karate - [print] Nombre:  Tito 
+19:39:19.914 [pool-2-thread-1] INFO  com.intuit.karate - [print] Apellidos:  Lara Smith 
+19:39:19.914 [pool-2-thread-1] INFO  com.intuit.karate - [print] Servicio:  Cable 
+19:39:19.915 [pool-2-thread-1] INFO  com.intuit.karate - [print] Deuda:  168.1 
+19:39:19.953 [pool-2-thread-1] ERROR com.intuit.karate - classpath:features/database/workDB.feature:27
+* match cliente.NOMBRE == 'Tito22'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Tito'
+  'Tito22'
+
+classpath:features/database/workDB.feature:27
+19:39:20.379 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
+19:42:35.240 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @db_003
+19:42:35.977 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:42:35.987 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1760316155979
+19:42:35.996 [main] DEBUG com.intuit.karate.Suite - waiting for 7 features to complete
+19:42:36.894 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+19:42:37.080 [pool-2-thread-1] INFO  com.intuit.karate - [print] DNI:  57575757 
+19:42:37.082 [pool-2-thread-1] INFO  com.intuit.karate - [print] Nombre:  Tito 
+19:42:37.082 [pool-2-thread-1] INFO  com.intuit.karate - [print] Apellidos:  Lara Smith 
+19:42:37.084 [pool-2-thread-1] INFO  com.intuit.karate - [print] Servicio:  Cable 
+19:42:37.085 [pool-2-thread-1] INFO  com.intuit.karate - [print] Deuda:  168.1 
+19:42:37.574 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 7 (4 remaining) classpath:features/database/workDB.feature
